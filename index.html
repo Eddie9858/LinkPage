@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<!--⇒ 받은 것에 들어있는 것이 바로 HTML, CSS, Javascript 랍니다.
+
+    ⇒ HTML은 `뼈대`, CSS는 `꾸미기`, Javascript는 `움직이기` ! -->
+
+
+<!--🤩 웹페이지에서 `뼈대`를 담당하는 html은,
+        
+    기본적으로 `<head>` 영역과 `<body>`영역으로 이루어져 있어요. -->
+
+
+<head>
+    <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+         우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Eddie's" />
+    <meta property="og:description" content="Eddie's Profile Link" />
+    <meta property="og:image" content="rhul.jpg" />
+    <title>Eddie's 프로필 링크
+    </title>
+
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard", serif;
+        }
+
+
+        body {
+            background: linear-gradient(180deg, #422B83 0%, #4A629F 100%);
+            height: 100vh;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+            background-image: url('rhul.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main {
+            color: #FFFFFF;
+            font-size: 18px;
+            size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sub {
+            color: white;
+            font-size: 14px;
+            size: 14px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap > a {
+            width: 320px;
+            height: 59px;
+
+            background-color: white;
+
+            border-radius: 5px;
+
+            margin-bottom: 16px;
+
+            font-size: 16px;
+            font-weight: bold;
+            color: #382863;
+
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #353432;
+
+            box-shadow: 3px 3px 5px 0px black;
+        }
+        .wrap > a:hover{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 우리가 웹페이지에서 볼 수 있는 부분을 세팅하는 곳이죠.
+         우리가 집에서 눈에 볼 수 있는 집 구조들을 설정하는 곳이죠.-->
+
+    <div class="wrap">
+
+        <div class="profile"></div>
+        <h1 class="main">
+            Eddie
+        </h1>
+        <p class="sub"> START</p>
+        <a target="_blank" href="https://www.instagram.com/eddie_taste/">Instagram</a>
+        <a target="_blank" href="https://github.com/Eddie9858">GitHub</a>
+        <a target="_blank" href="KakaoTalkP.jpg">KakaoTalk</a>
+        <a target="_blank" href="https://discord.gg/YtgyMdtE">Discord</a>
+        <a target="_blank" href="https://www.notion.so/Life-Wiki-75ab15e456804bcf9d4b9faed102fda0">notion</a>
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
